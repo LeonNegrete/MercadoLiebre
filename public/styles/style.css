@@ -1,0 +1,576 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: #EAC926;
+}
+
+div.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header div.logo {
+    padding: 10px;
+}
+
+header .form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header nav {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input {
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit {
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+
+div.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+    text-align: center;
+}
+
+div.last-visit,
+div.offers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price {
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount {
+    width: 70%;
+}
+
+.discount,
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    color: #666;
+}
+
+.description {
+    display: block;
+    visibility: hidden;
+    margin-top: 20px;
+}
+
+main section article .description {
+    transition-property: visibility;
+    transition-duration: 1s;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: rotateZ, 0.5s;
+}
+
+main section article i:hover {
+    transform: rotateZ(-90deg);
+}
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+article div.main-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.boton-login {
+    transition: all, 0.2s;
+}
+
+.boton-login:hover {
+    background-color: #0022AA;
+    color: white
+}
+
+footer {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.elementos-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.titular {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0044AA;
+    transition: all, 0.5s;
+
+}
+
+footer i:hover {
+    color: #EAC926
+}
+
+.licencia {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+@media (min-width: 361px) {
+    main section article .description {
+        display: block;
+    }
+
+    main section article:hover .description {
+        visibility: visible;
+    }
+
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main section div.products article {
+        width: 45%;
+    }
+
+    .price,
+    .discount {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    main section div.products article {
+        width: 22%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.top-header-notMobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header {
+    background-color: #EAC926;
+    align-self: flex-start;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+.busqueda {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding: 2px;
+}
+
+.barra {
+    width: 100%;
+    border: none;
+}
+
+.busqueda button {}
+
+#cuotas {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.burger-menu {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0044AA;
+    color: white;
+    width: 9vw;
+    height: 9vw;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#burguer {
+    font-size: 4.5vw;
+    /* la burguer no esta perfectamente centrada dentro de su div (cuadrado azul) */
+}
+
+
+
+
+/* Tamaños de fuentes */
+h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #666666;
+    margin: 2% 0px
+}
+
+.descuentos, .descripciones {
+    font-size: 16px;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+    padding-left: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    /* creo que no es la mejor idea que el body sea un contenedor flex, pero la consigna pide que centremos el main */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebebeb;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* centrando el main como flex item del flex container body como lo sugiere la consigna */
+    width: 90vw;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.5%;
+    background-color: white;
+}
+
+.info {
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    width: 100%;
+    padding: 15px;
+}
+
+article div i {
+    color: #39b54a;
+}
+
+.circulo {
+    width: 10px;
+    height: 10px;
+    border-top: none;
+    padding: 0px;
+    border-radius: 10px solid #39b54a;
+}
+
+img {
+    width: 100%;
+}
+
+.banner {
+    width: 100vw;
+}
+
+.precio-y-descuento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.precios {
+    font-size: 18px;
+    flex: 3;
+    align-self: flex-start;
+}
+
+.descuentos {
+    white-space: nowrap;
+    color: #39b54a;
+    flex: 7;
+    align-self: flex-start;
+}
+
+footer {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0044AA;
+
+}
+
+.descripciones {
+    margin-top: 20px;
+    visibility: hidden;
+    color: #666666
+}
+
+nav ul {
+    display: none;
+}
+
+footer {
+    padding: 5% 4% 1% 4%;
+}
+
+.copy {
+    width: 100%;
+    text-align: left;
+    padding: 10% 0% 0% 0.5%;
+}
+
+article {
+    margin: 5% 0%;
+}
+
+/* Tablets */
+@media(min-width: 361px) {
+    .div-foot-father {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start
+    }
+
+    .div-foot {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .articulos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    article:hover .descripciones{
+        visibility: visible;
+        
+    }
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    article {
+        
+        width: 45%;
+        margin: 2.5% 0%
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-header-notMobile {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #cuotas, .busqueda, .logo {
+        width: 33%;
+    }
+
+    .busqueda {
+        order: 1;
+        margin: 0px 1% 0px 0%
+    }
+
+    #cuotas {
+        order: 2;
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* Desktops */
+@media(min-width: 769px) {
+    article {
+        width: 24%;
+    }
+}

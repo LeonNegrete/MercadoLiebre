@@ -1,0 +1,63 @@
+main{
+    margin-top: 4%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.texto{
+    border: none;
+    height: 2em;
+    padding: 5%;
+    border-radius: 5px;
+}
+form input:invalid{
+    border:solid 1px red;
+}
+form input:invalid::after{
+    position: absolute;
+    content: 'Ingrese dato valido';
+    left: 65%;
+}
+button{
+    padding: 1em;
+    border:none;
+    background-color:white ;
+    margin:0% 4%;
+    border-radius: 12px;
+    transition: all, 0.5s;
+}
+button:hover{
+    background-color:#0044AA;
+    color:white;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+
+}
+
+b{
+    margin: 3% 0%;
+    font-size: 1.2em;
+}
+
+.interests input, .login input{
+    margin: 3% 0%;
+}
+.interests{
+    display: flex;
+    flex-direction: column;
+}
+.interests label{
+    align-items: center;
+    margin-left: 5%;
+}
+
+.contrasena input{
+    margin: 2% 0% ;
+}
+
+.botones button{
+    width: 40%;
+}
