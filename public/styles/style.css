@@ -28,9 +28,6 @@ div.top-header {
     margin-top: 10px;
 }
 
-header div.logo {
-    padding: 10px;
-}
 
 header .form {
     width: 50%;
@@ -42,7 +39,6 @@ header .form {
 
 header nav {
     font-size: 12px;
-    margin-left: 20px;
 }
 
 header ul li {
@@ -75,10 +71,10 @@ div.burger-menu i {
     border-radius: 5px;
     color: #FFF;
     font-size: 20px;
-    height: 40px;
+
     margin: 10px 0px 20px 0px;
     padding: 10px;
-    width: 40px;
+
     text-align: center;
 }
 
@@ -111,7 +107,8 @@ h3,
 .description {
     display: block;
     visibility: hidden;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 
 main section article .description {
@@ -289,7 +286,9 @@ main section article i {
     flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
-    padding: 5%;
+    padding: 1% 0% 3% 0%;
+    align-items: center;
+
 }
 
 header {
@@ -303,25 +302,41 @@ header {
 
 .logo {
     width: 50%;
-    padding: 10px;
 }
 
 .busqueda {
     display: flex;
     width: 50%;
     align-items: center;
-    padding: 2px;
+
+}
+.barra-div{
+    width: 100%;
+    height: 50%;
+    position: relative;
 }
 
 .barra {
+    border-radius: 6px;
+    padding: 3%;
+    font-size: 90%;
     width: 100%;
     border: none;
+    height: 100%;
+    
+}
+.barra-btn{
+    position: absolute;
+    border: none;
+    top: 22%;
+    right:2%;
+    background-color: white;
+    color:#A4A4A4
 }
 
-.busqueda button {}
+
 
 #cuotas {
-    margin-top: 10px;
     width: 100%;
     text-align: center;
 }
@@ -459,7 +474,9 @@ footer {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    background-color: white;
 }
+
 
 footer i {
     font-size: 2em;
@@ -469,9 +486,11 @@ footer i {
 }
 
 .descripciones {
-    margin-top: 20px;
+    margin-top: 10px;
     visibility: hidden;
-    color: #666666
+    color: #666666;
+    max-width: 100%;
+    font-size: 99%;
 }
 
 nav ul {
@@ -479,7 +498,9 @@ nav ul {
 }
 
 footer {
-    padding: 5% 4% 1% 4%;
+    margin-top: 10%;
+    padding:1% 4% 1% 4%;
+
 }
 
 .copy {
@@ -491,9 +512,21 @@ footer {
 article {
     margin: 5% 0%;
 }
+#cuotas, .busqueda, .logo {
+    padding: 1%;
+
+}
+.div-foot{
+    margin-top: 5%;
+}
+
 
 /* Tablets */
 @media(min-width: 361px) {
+    nav ul li{
+        font-size: 8px;
+    }
+
     .div-foot-father {
         display: flex;
         flex-direction: row;
@@ -570,7 +603,13 @@ article {
 
 /* Desktops */
 @media(min-width: 769px) {
+    nav ul li{
+        font-size: 12px;
+    }
     article {
         width: 24%;
+    }
+    .barra-div{
+        height: 40%;
     }
 }

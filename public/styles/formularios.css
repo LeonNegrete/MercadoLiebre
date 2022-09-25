@@ -9,25 +9,20 @@ form{
     border: none;
     height: 2em;
     padding: 5%;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 form input:invalid{
     border:solid 1px red;
 }
-form input:invalid::after{
-    position: absolute;
-    content: 'Ingrese dato valido';
-    left: 65%;
-}
-button{
+.button-form{
     padding: 1em;
     border:none;
     background-color:white ;
     margin:0% 4%;
     border-radius: 12px;
-    transition: all, 0.5s;
+    transition: all, .3s;
 }
-button:hover{
+.button-form:hover{
     background-color:#0044AA;
     color:white;
 }
@@ -60,4 +55,48 @@ b{
 
 .botones button{
     width: 40%;
+}
+
+.login-form{
+    padding: 0%;
+    width: 60%;
+    height: 100%;
+}
+
+.log{
+    padding: 0%;
+    padding-left: 5%;
+    width: 100%;
+    height: 3.5rem;
+}
+
+.form-reg{
+width: 90%;
+}
+
+@media (min-width:361px){
+    .form-reg{
+        width: auto;
+    }
+    .texto{
+        border: none;
+        height: 2em;
+        padding: 5%;
+        border-radius: 6px;
+    }
+    .login-form{
+        padding: 0%;
+        width: 60%;
+        height: 100%;
+    }
+    
+    .log{
+        padding: 0%;
+        padding-left: 1%;
+        width: 100%;
+        height: 3.5rem;
+    }
+
+
+
 }
